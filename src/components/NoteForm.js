@@ -57,7 +57,7 @@ const NoteForm = ({ addNote }) => {
                   placeholder="Tags (comma separated)"
                 />
                 </p>
-                <p>
+                 <p>
                 <input
                   type="color"
                   name="color"

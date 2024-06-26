@@ -14,11 +14,10 @@ html {
   min-height: 100vh;
   background-size: cover;
   color: "#fff";
-  
+
 }
 
 .note-form {
-  
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -30,41 +29,41 @@ html {
 
 }
 
-.note-form input[name="title"]{
+.note-form input[name="title"] {
   width: 500px;
   height: 40px;
   border-radius: 10px;
 }
 
-.note-form textarea[name="content"]{
+.note-form textarea[name="content"] {
   width: 500px;
   height: 120px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
-.note-form input[name="tags"]{
+.note-form input[name="tags"] {
   width: 500px;
   height: 30px;
- border-radius: 10px;
+  border-radius: 10px;
 }
 
-.note-form button[type="submit"]{
+.note-form button[type="submit"] {
   width: 140px;
   height: 40px;
- border-color: blue;
+  border-color: blue;
 }
 
-.note-form input[name="color"]{
+.note-form input[name="color"] {
   width: 50px;
   height: 50px;
-  
+
 }
 
-.notes-home{
+.notes-home {
   display: list-item;
 }
 
-.notes-form{
+.notes-form {
   display: list-item;
 }
 
@@ -99,16 +98,16 @@ html {
 .note-footer {
   display: flex;
   justify-content: space-between;
- 
+
 }
 
-.notes-footer{
+.notes-footer {
   background-color: blue;
   width: 100%;
   height: 20px;
 }
 
-.notes-footer h6{
+.notes-footer h6 {
   text-align: center;
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
@@ -139,3 +138,337 @@ button {
   display: flex;
 }
 
+
+@media (min-width: 300px) and (max-width:375px) {
+  .App {
+    width: 100%;
+    height: 100%;
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: arial, sans-serif;
+    background-image: url("./images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .note-form {
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 180px;
+    height: 100%;
+  }
+
+  .note-form input[name="title"] {
+    width: 160px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form textarea[name="content"] {
+    width: 160px;
+    height: 80px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form input[name="tags"] {
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-color: blue;
+  }
+
+  .note-form input[name="color"] {
+    width: 30px;
+    height: 30px;
+    border: solid 2px #6d473f;
+  }
+
+  .app-header {
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .app-header h1 {
+    display: inline;
+  }
+
+  .notes-page {
+    display: block;
+  }
+
+  .notes-container {
+    display: grid;
+  }
+
+}
+
+@media(min-width: 375px) {
+
+  .App {
+    width: 100%;
+    height: 100%;
+  }
+
+  .app-header {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .app-header h1 {
+    display: inline;
+  }
+
+  .note-form {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 70px;
+    margin-top: 90px;
+    width: 200px;
+    height: 100%;
+  }
+
+  .note-form input[name="title"] {
+    width: 180px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form textarea[name="content"] {
+    width: 180px;
+    height: 80px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form input[name="tags"] {
+    width: 140px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-color: blue;
+  }
+
+  .note-form input[name="color"] {
+    width: 30px;
+    height: 30px;
+    border: solid 2px #6d473f;
+  }
+
+  .notes-page {
+    display: block;
+  }
+
+  .note {
+    display: flex;
+  }
+
+
+}
+
+@media (min-width: 425px) {
+
+  .App{
+    width: 100%;
+    height: 100%;
+  }
+
+  .app-header {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .app-header h1 {
+    display: inline;
+  }
+
+  .note-form {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 80px;
+    width: 220px;
+    height: 100%;
+  }
+
+  .note-form input[name="title"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form textarea[name="content"] {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form input[name="tags"] {
+    width: 140px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px #6d473f;
+  }
+
+  .note-form button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-color: blue;
+  }
+
+  .note-form input[name="color"] {
+    width: 30px;
+    height: 30px;
+    border: solid 2px #6d473f;
+  }
+  
+}
+
+@media (min-width : 768px) {
+.note-form{
+  margin-left: 250px;
+}
+}
+
+@media (min-width:1024px) {
+ .note-form{
+  margin-left: 300px;
+  width: 700px;
+ }
+
+ .note-form input[name="title"] {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.note-form textarea[name="content"] {
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.note-form input[name="tags"] {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.note-form button[type="submit"] {
+  width: 140px;
+  height: 40px;
+  border-color: blue;
+}
+
+.note-form input[name="color"] {
+  width: 50px;
+  height: 50px;
+
+}
+
+.notes-home {
+  display: list-item;
+}
+
+.notes-form {
+  display: list-item;
+}
+
+.app-header {
+  width: 100%;
+  height: 70px;
+  background-color: cadetblue;
+  padding-top: 20px;
+}
+
+.app-header h1 {
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+}
+
+.note {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  word-wrap: break-word;
+}
+
+
+.note h2 {
+  margin-top: 0;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.notes-footer {
+  background-color: blue;
+  width: 100%;
+  height: 20px;
+}
+
+.notes-footer h6 {
+  text-align: center;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.notes-container {
+  display: list-item;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #55a0f0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notes-nav {
+  width: 300px;
+  height: 100%;
+}
+
+.notes-page {
+  display: flex;
+}
+
+  
+}

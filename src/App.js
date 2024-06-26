@@ -6,6 +6,7 @@ import { addNoteToDB, getNotesFromDB, deleteNoteFromDB, updateNoteInDB } from '.
 import './App.css';
 
 
+
 function App() {
   const [notes, setNotes] = useState([]);
   useEffect(() => {
@@ -32,9 +33,7 @@ function App() {
     <div className="App">
 
       <div className='app-header'>
-        <header>
           <h1>Notes App</h1>
-        </header>
       </div>
 
       <div className='notes-page'>
@@ -54,7 +53,6 @@ function App() {
         </div>
 
       </div>
-
      
 
     </div>

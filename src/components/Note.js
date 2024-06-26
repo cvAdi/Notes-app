@@ -38,6 +38,7 @@ const Note = ({ note, deleteNote, editNote }) => {
             <button onClick={() => deleteNote(note.id)}>Delete</button>
           </div>
         </div>
+        
       )}
     </div>
     </div>
